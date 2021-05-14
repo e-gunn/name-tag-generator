@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import NameTagList from "./NameTagList.js";
 import UserInput from "./UserInput.js";
-import "./styles.css";
 
 class App extends Component {
   state = {
-    names: ["Aries", "Chucky", "Chino", "Toby", "MeowMeow"]
+    names: []
   };
   addName = (name) => {
     // to learn spread syntax, check out these examples: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Syntax
@@ -23,14 +21,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Name Tag Generator</h1>
-        <UserInput addName={this.addName} />
         <NameTagList names={this.state.names} removeName={this.removeName} />
+        <UserInput />
       </div>
     );
   }
 }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
-
-
+export default App;
