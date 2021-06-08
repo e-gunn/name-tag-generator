@@ -4,7 +4,7 @@ Create name tags for you and your friends!
 
 ## Project Details
 
-**View My Project:** https://codesandbox.io/s/l8-build-your-name-tag-text-inputs-forked-mcgih
+**View My Project:** https://mcgih.csb.app/
 
 ![Name Tag Generator Screenshot](https://github.com/e-gunn/name-tag-generator/blob/main/screenshot.png)
 
